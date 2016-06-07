@@ -6,7 +6,7 @@ import time
 class Sms(object):
     wsdl_url = 'http://msender.uzbek-telecom.uz/scripts/soap/Banking.wsdl'
     client = suds.client.Client(wsdl_url)
-    location = 'http://195.158.12.44:8088'
+    location = '' # web service url
     client.sd[0].service.setlocation(location)
     from_number = '6100'
     #message = 'Not Avialable'
