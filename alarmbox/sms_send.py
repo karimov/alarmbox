@@ -4,9 +4,9 @@ import base64
 import time
 
 class Sms(object):
-    wsdl_url = 'http://msender.uzbek-telecom.uz/scripts/soap/Banking.wsdl'
+    wsdl_url = '' # WSDL url
     client = suds.client.Client(wsdl_url)
-    location = '' # web service url
+    location = '' # web service endpoint interface
     client.sd[0].service.setlocation(location)
     from_number = '6100'
     #message = 'Not Avialable'
